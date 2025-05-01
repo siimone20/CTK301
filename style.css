@@ -1,48 +1,108 @@
-/* This is a stylesheet for BasicCSS.html */
-
-/*
-p {
-    color: #ff0000;
-    background-color: #aae2cd;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
   }
-*/
-
-.specialp {
-    color: blue;
-    background-color: lightgreen;
-}
-
-#specialid {
-    color: #060;
-    background-color: orange;
-}
-
-#divexample{
-    background-color:blue;
-}
-
-.spanstyle{
-    color: red;
-}
-
-a {
-    color: #ff0000;
+  
+  h1, h2, h3 {
+    color: #003366; /* Deep blue for headers */
+  }
+  
+  /* Page Title */
+  .page-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #003366;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
     text-decoration: none;
-  }
-
-  a:link {
-    color: #00ff00;
-  }
-
-  a:visited {
-    color: #0000ff;
+    color: #fff;
+    font-size: 1.1em;
   }
   
-  a:active {
-    color: #00ffff;
+  /* Hover and Visited Links */
+  .nav-links li a:hover {
+    color: #FFD700; /* Yellow on hover */
   }
-  a:hover {
-    color:darkgreen;
-    text-decoration: underline;
-  }        
   
+  .nav-links li a:visited {
+    color: #008000; /* Green on visited */
+  }
+  
+  /* Header Image */
+  .header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+  }
+  
+  /* Main Section */
+  main {
+    padding: 20px;
+  }
+  
+  /* Highlighted Text */
+  .highlight-text {
+    color: #FF6347; /* Red-orange color for important text */
+    font-weight: bold;
+  }
+  
+  /* Course Section */
+  .course-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+  .course-title {
+    color: #003366;
+    font-size: 1.6em;
+  }
+  
+  .course-description {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Special Box */
+  .special-box {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  #info-box {
+    font-style: italic;
+    color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
