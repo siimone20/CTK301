@@ -1,108 +1,84 @@
-/* General Styles */
+/* Reset and base styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url('a5bg.png');
+    background-repeat: repeat;
+  }
+  
+  h1 {
+    font-weight: normal;
+    padding: 1em;
+    font-size: 2em;
+  }
+  
+  nav {
+    display: flex;
+    background-color: #001a66;
     padding: 0;
+    margin: 0;
   }
   
-  h1, h2, h3 {
-    color: #003366; /* Deep blue for headers */
-  }
-  
-  /* Page Title */
-  .page-title {
+  nav a {
+    flex-grow: 1;
     text-align: center;
-    font-size: 2.5em;
-    color: #003366;
-  }
-  
-  /* Navigation Links */
-  .nav-links {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    background-color: #333;
-  }
-  
-  .nav-links li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  .nav-links li a {
     text-decoration: none;
-    color: #fff;
-    font-size: 1.1em;
+    color: white;
+    padding: 1em 0;
+    background-color: #001a66;
+    font-family: Helvetica, Arial, sans-serif;
+    border-right: 1px solid white;
   }
   
-  /* Hover and Visited Links */
-  .nav-links li a:hover {
-    color: #FFD700; /* Yellow on hover */
+  nav a:last-child {
+    border-right: none;
   }
   
-  .nav-links li a:visited {
-    color: #008000; /* Green on visited */
+  nav a:hover {
+    background-color: white;
+    color: #001a66;
   }
   
-  /* Header Image */
-  .header-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 20px;
-  }
-  
-  /* Main Section */
   main {
-    padding: 20px;
+    background-color: white;
+    padding: 2em;
+    margin: auto;
+    max-width: 1000px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
   }
   
-  /* Highlighted Text */
-  .highlight-text {
-    color: #FF6347; /* Red-orange color for important text */
+  h2 {
     font-weight: bold;
+    border-bottom: 3px solid black;
+    padding-bottom: 0.3em;
   }
   
-  /* Course Section */
-  .course-section {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
+  p {
+    text-align: justify;
+    line-height: 1.5;
   }
   
-  .course-title {
-    color: #003366;
-    font-size: 1.6em;
+  p a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
   }
   
-  .course-description {
-    color: #555;
-    line-height: 1.6;
+  p a:hover {
+    color: red;
+    text-decoration: underline;
   }
   
-  /* Special Box */
-  .special-box {
-    background-color: #f0f0f0;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 5px;
-  }
-  
-  #info-box {
-    font-style: italic;
-    color: #333;
-  }
-  
-  /* Footer */
   footer {
-    background-color: #222;
-    color: #fff;
+    background-color: #001a66;
+    color: white;
+    border: 3px solid white;
+    padding: 1.5em;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    max-width: 1000px;
+    margin: 2em auto 0 auto;
   }
