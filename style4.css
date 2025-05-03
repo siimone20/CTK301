@@ -1,0 +1,64 @@
+/* Set all text to Helvetica or Arial */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url('Background.jpg'); /* Make sure this file exists */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+  }
+  
+  /* Style headers: orange, italic, and normal weight */
+  h1, h2, h3, h4, h5, h6 {
+    color: orange;
+    font-style: italic;
+    font-weight: normal;
+  }
+  
+  /* Centered paragraph — add class="centered" in your HTML */
+  .centered {
+    text-align: center;
+  }
+  
+  /* Justified paragraph — add class="justified" in your HTML */
+  .justified {
+    text-align: justify;
+  }
+  
+  /* Image styling: black border and yellow space inside */
+  img {
+    border: 10px solid rgb(9, 10, 9);
+    padding: 10px;
+    background-color: yellow;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Optional: spacing for main content */
+  main {
+    padding: 20px;
+  }
+  
+  /* Optional: style nav */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav ul li a {
+    color: red;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: yellow;
+  }
+  
+  nav ul li a:visited {
+    color: green;
+  }
