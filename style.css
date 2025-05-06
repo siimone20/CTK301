@@ -1,84 +1,61 @@
-/* Reset and base styles */
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
-    background-image: url('a5bg.png');
-    background-repeat: repeat;
-  }
-  
-  h1 {
-    font-weight: normal;
-    padding: 1em;
-    font-size: 2em;
-  }
-  
-  nav {
-    display: flex;
-    background-color: #001a66;
     padding: 0;
-    margin: 0;
+    background-color: #fdfdfd;
+    color: #333;
   }
   
-  nav a {
-    flex-grow: 1;
-    text-align: center;
-    text-decoration: none;
+  header {
+    background-color: #222;
     color: white;
-    padding: 1em 0;
-    background-color: #001a66;
-    font-family: Helvetica, Arial, sans-serif;
-    border-right: 1px solid white;
+    padding: 1rem;
+    text-align: center;
   }
   
-  nav a:last-child {
-    border-right: none;
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0 0 0;
   }
   
-  nav a:hover {
-    background-color: white;
-    color: #001a66;
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a.active,
+  nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffa500;
   }
   
   main {
-    background-color: white;
-    padding: 2em;
+    padding: 2rem;
+    max-width: 800px;
     margin: auto;
-    max-width: 1000px;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
   }
   
-  h2 {
-    font-weight: bold;
-    border-bottom: 3px solid black;
-    padding-bottom: 0.3em;
+  .project {
+    margin-bottom: 3rem;
   }
   
-  p {
-    text-align: justify;
-    line-height: 1.5;
-  }
-  
-  p a {
-    color: blue;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  p a:hover {
-    color: red;
-    text-decoration: underline;
+  .project img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-top: 0.5rem;
   }
   
   footer {
-    background-color: #001a66;
+    background-color: #222;
     color: white;
-    border: 3px solid white;
-    padding: 1.5em;
     text-align: center;
-    font-family: Verdana, sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    max-width: 1000px;
-    margin: 2em auto 0 auto;
+    padding: 1rem;
+    margin-top: 2rem;
   }
